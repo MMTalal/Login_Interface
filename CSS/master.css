@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Import Google Fonts for the entire page */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Apply universal reset and set the font family */
+
+/* Style for the body element */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-image: url("../Images/Background.png"); 
+    background-repeat: no-repeat; /* No repeating background */
+    background-size: cover; /* Cover background in all display */
+    background-position: center; /* Background center */
+    background-attachment: fixed; /* Background fixed with scroll */
+    position: relative;
+}
+
+/* Style for the main heading */
+h1 {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50px;
+}
+
+/* Hover effect for the main heading */
+h1:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* Change text stroke color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the subheading */
+h3 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 130px;
+    text-decoration: overline;
+    text-decoration-color: #E13C81;
+    text-decoration-style: solid;
+}
+
+/* Style for the form wrapper */
+.warpper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+/* Style for the form heading */
+.warpper h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Style for input boxes */
+.warpper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 30px 0px;
+}
+
+/* Style for the input fields */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    caret-color: #E13C81; /* Change caret color when typing.. */
+}
+
+/* Hover effect for input fields */
+.input-box input:hover{
+    border: 2px solid white;
+}
+
+/* Style for the placeholder text */
+.input-box input::placeholder {
+    color: white;
+}
+
+/* Style for the icons inside the input boxes */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* Hover effect for the icons */
+.input-box input:hover + i {
+    color: #E13C81; /* تغيير لون الأيقونة */
+}
+
+/* Style for the "Remember me" and "Forgot password?" section */
+.warpper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+}
+
+/* Style for the "Remember me" checkbox */
+.remember-forget label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+/* Hover effect for the "Remember me" checkbox */
+.remember-forget label input:hover {
+    accent-color: #E13C81;
+    margin-right: 3px;
+}
+
+/* Style for the "Remember me" link */
+.remember-forget a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for the "Remember me" link */
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+/* Style for the "Login" button */
+.warpper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    cursor: pointer;
+    color: #E13C81;
+    font-weight: 600;
+}
+
+/* Hover effect for the "Login" button */
+.warpper .btn:hover {
+    background:#E13C81 ;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Style for the "Register" link */
+.warpper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0px 15px;
+}
+
+/* Style for the "Register now" link */
+.register-link a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+/* Hover effect for the "Register now" link */
+.register-link a:hover{
+    text-decoration: underline;
+}
+
+/* For responsive design */
+@media (max-width: 750px) and (min-width: 350px){
+    h1 {
+        font-size: 30px;
+        top: 20px;
+    }
+    h3 {
+        font-size: 14px;
+        top: 60px;
+    }
+    .warpper {
+        padding: 20px 30px;
+    }
+    .warpper h2 {
+        font-size: 24px;
+    }
+    .input-box input {
+        padding: 12px 45px 12px 12px;
+    }
+    .input-box i {
+        font-size: 16px;
+        top: 25px;
+    }
+    .warpper .btn {
+        height: 40px;
+        font-size: 14px;
+    }
+    .warpper .remember-forget,
+    .register-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) and (min-width: 100px){
+    h1 {
+        font-size: 20px;
+        font-weight: 800;
+        top: 20px;
+    }
+    h3 {
+        font-size: 10px;
+        top: 100px;
+    }
+    .warpper {
+        padding: 20px 30px;
+    }
+    .warpper h2 {
+        font-size: 15px;
+    }
+    .input-box input {
+        padding: 12px 45px 12px 12px;
+    }
+    .input-box i {
+        font-size: 16px;
+        top: 25px;
+    }
+    .warpper .btn {
+        height: 40px;
+        font-size: 10px;
+    }
+    .warpper .remember-forget,
+    .register-link {
+        font-size: 10px;
+    }
+}
