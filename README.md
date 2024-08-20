@@ -34,7 +34,7 @@ To run this project locally, follow these steps:
    cd login-page
    ```
 
-3. **Open the `Home.html` file in your web browser:**
+3. **Open the `index.html` file in your web browser:**
    - Double-click the `index.html` file.
    - Alternatively, open it through a local server or using an IDE with live server support.
 
